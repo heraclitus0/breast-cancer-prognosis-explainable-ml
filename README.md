@@ -59,6 +59,10 @@ This study develops and evaluates an explainable machine learning pipeline for b
 | Gene features selected | 20 |
 | Class ratio | 1.38:1 (Died:Alive) |
 
+Note: overall_survival coding: 1 = Alive, 0 = Died (target is survival, 
+not mortality. Negative SHAP = increased mortality risk.)
+
+
 **Sources**
 - Curtis C, et al. *Nature.* 2012;486:346–352. [doi:10.1038/nature10983](https://doi.org/10.1038/nature10983)
 - Pereira B, et al. *Nature Communications.* 2016;7:11479. [doi:10.1038/ncomms11479](https://doi.org/10.1038/ncomms11479)
@@ -127,10 +131,11 @@ Kaplan-Meier — HER2 (p=0.0093) + Risk Groups (p<0.0001)
 | 19 | SHAP initialization | — |
 | 20 | SHAP beeswarm | fig_14 |
 | 21 | SHAP bar plot | fig_15 |
-| 22 | SHAP waterfall — Patient 234 | fig_16 |
-| 23 | HER2 SHAP analysis | fig_18, fig_19 |
+| 22 | SHAP waterfall — Patient 234 (false negative case study) | fig_16 |
+| 22 | SHAP waterfall — Patient 53 (exploratory, superseded by Patient 234) | fig_17 |
+| 23 | HER2 SHAP analysis — dependence + violin | fig_18, fig_19 |
 | 24 | Save SHAP values | shap_values.csv |
-| 24b | SHAP interaction values | fig_20, fig_21 |
+| 24b | SHAP interaction values (14×14) | fig_20, fig_21 |
 | 25 | 5-fold CV + bootstrap CIs | cv_results.csv |
 | 26 | Gene selection (mutual information) | gene_mi_scores.csv |
 | 27 | Combine clinical + gene features | — |
