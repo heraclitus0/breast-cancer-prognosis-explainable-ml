@@ -1,0 +1,88 @@
+cff-version: 1.2.0
+title: >-
+  Clinical-Genomic Predictive Modeling for Breast Cancer Prognosis:
+  An Explainable Machine Learning Approach Using the METABRIC Cohort
+message: >-
+  If you use this software or findings in your research,
+  please cite it using the metadata from this file.
+type: software
+authors:
+  - family-names: Pulikanti
+    given-names: Sashi Bharadwaj
+    orcid: https://orcid.org/0009-0002-8904-2209
+repository-code: >-
+  https://github.com/heraclitus0/breast-cancer-prognosis-explainable-ml
+license: MIT
+version: 1.0.0
+date-released: "2025-04-19"
+keywords:
+  - breast cancer
+  - machine learning
+  - explainable AI
+  - SHAP
+  - XGBoost
+  - METABRIC
+  - survival analysis
+  - kaplan-meier
+  - bioinformatics
+  - clinical genomics
+abstract: >-
+  An explainable machine learning pipeline for breast cancer survival
+  prediction using the METABRIC cohort (n=1,904). XGBoost on 14 routine
+  clinical variables achieves AUC=0.725 (95% CI: 0.707-0.757) without
+  genomic profiling. SHAP analysis reveals age at diagnosis as the dominant
+  predictor and captures the HER2-Herceptin treatment effect without
+  explicit treatment labels. Adding 20 gene expression features yields
+  zero AUC improvement, demonstrating that routine clinical variables
+  capture equivalent predictive signal.
+references:
+  - type: article
+    title: >-
+      The genomic and transcriptomic architecture of 2,000 breast
+      tumours reveals novel subgroups
+    authors:
+      - family-names: Curtis
+        given-names: Christina
+    journal: Nature
+    volume: 486
+    pages: 346-352
+    year: 2012
+    doi: 10.1038/nature10983
+  - type: article
+    title: >-
+      The somatic mutation profiles of 2,433 breast cancers refine
+      their genomic and transcriptomic landscapes
+    authors:
+      - family-names: Pereira
+        given-names: Bernard
+    journal: Nature Communications
+    volume: 7
+    pages: "11479"
+    year: 2016
+    doi: 10.1038/ncomms11479
+  - type: article
+    title: >-
+      The cBio Cancer Genomics Portal: An Open Platform for Exploring
+      Multidimensional Cancer Genomics Data
+    authors:
+      - family-names: Cerami
+        given-names: Ethan
+    journal: Cancer Discovery
+    volume: 2
+    issue: 5
+    pages: 401-404
+    year: 2012
+    doi: 10.1158/2159-8290.CD-12-0095
+  - type: article
+    title: >-
+      Integrative Analysis of Complex Cancer Genomics and Clinical
+      Profiles Using the cBioPortal
+    authors:
+      - family-names: Gao
+        given-names: Jianjiong
+    journal: Science Signaling
+    volume: 6
+    issue: 269
+    pages: pl1
+    year: 2013
+    doi: 10.1126/scisignal.2004088
